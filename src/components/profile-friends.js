@@ -15,7 +15,15 @@ const generateListItemNode = (data) => {
   const titleNode = clone.querySelector("p.page-micro");
   const avatarNode = clone.querySelector(".profile-list-item-avatar");
 
-  nameNode.innerHTML = `${name}`;
+  //checking if a friend is a top friend
+  //topFriends are marked with a true value in the db
+  if(topFriend==undefined){
+    nameNode.innerHTML = `${name}`;
+  }
+  else{
+    nameNode.innerHTML = `${name + " \u2728"}`; //adding start symbol for top friend
+  }
+  
   titleNode.innerHTML = `${jobTitle} @ ${companyName}`;
   avatarNode.src = avatarSrc;
   avatarNode.setAttribute("aria-label", `${name}`);
@@ -37,6 +45,7 @@ const generateListItemNode = (data) => {
  * @param {object} resultsData JSON payload of results
  */
 export const generateFriendsListFromTemplate = (resultsData) => {
+  
   const friendsListSection = document.querySelector(
     "#profile-friends .profile-friends-list"
   );
