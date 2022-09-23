@@ -21,7 +21,7 @@ const generateListItemNode = (data) => {
     nameNode.innerHTML = `${name}`;
   }
   else{
-    nameNode.innerHTML = `${name + " \u2728"}`; //adding start symbol for top friend
+    nameNode.innerHTML = `${name + " \u2728"}`; //adding star symbol for top friend
   }
   
   titleNode.innerHTML = `${jobTitle} @ ${companyName}`;
