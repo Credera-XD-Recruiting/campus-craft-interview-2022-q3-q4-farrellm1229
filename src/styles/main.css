@@ -73,12 +73,12 @@ h3 {
 }
 
 .profile-background-banner {
-  background-image: url("../assets/profile_banner.jpeg");
+  background-image: url("../assets/headerImageWithGradient.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 339px;
-  height: 339px;
+  height: 160px;
 }
 
 .profile-footer {
