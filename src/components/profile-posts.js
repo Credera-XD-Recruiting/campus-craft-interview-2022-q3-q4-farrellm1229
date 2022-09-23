@@ -1,4 +1,4 @@
-import { removeChildNodes } from "../utils";
+import { removeChildNodes, getInitials } from "../utils";
 
 /**
  * Function which generates a single Card node based on a dataset
@@ -38,6 +38,15 @@ const generateCardNode = (data) => {
       `${authorFirstName} ${authorLastName}`
     );
     avatarNode.appendChild(avatarImg);
+  }
+  else{
+    const initials = getInitials(`${authorFirstName} ${authorLastName}`);
+    // check if initials are defined
+    if(initials){
+      const initialsParagraph = document.createElement("p");
+      initialsParagraph.innerHTML = initials;
+      avatarNode.appendChild(initialsParagraph);
+    }
   }
 
   return clone;
