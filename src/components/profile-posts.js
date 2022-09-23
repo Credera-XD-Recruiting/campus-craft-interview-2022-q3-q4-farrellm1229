@@ -14,6 +14,9 @@ const generateCardNode = (data) => {
     jobTitle,
     companyName,
     post,
+    city,
+    state,
+    publishDate,
   } = data;
   const templateId = "profile-post-item-template";
   const resultCardTemplate = document.getElementById(templateId);
@@ -23,7 +26,7 @@ const generateCardNode = (data) => {
   const postNode = clone.querySelector(".post-content");
   const avatarNode = clone.querySelector(".post-author-avatar");
 
-  authorName.innerHTML = `${authorFirstName} ${authorLastName}`;
+  authorName.innerHTML = `${authorFirstName} ${authorLastName} - ${city}, ${state} </br> Published: ${publishDate}`;
   jobDesc.innerHTML = `${jobTitle} @ ${companyName}`;
   postNode.innerHTML = post;
 
