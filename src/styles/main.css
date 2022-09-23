@@ -82,6 +82,5 @@ h3 {
 }
 
 .profile-footer {
-  height: 60px;
-  background-color: var(--grayscale_0);
+  background-color: transparent;
 }
