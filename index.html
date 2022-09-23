@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src = "/src/components/profile-header.js"> </script>
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
@@ -48,7 +49,12 @@
                   skeleton-block skeleton-block--quarter
                   loading
                 "
-              ></p>
+              >
+              <body onload="myFunction()">
+
+                <h3><span id="myText"></span></h3>
+              
+              </body></p>
             </div>
           </div>
         </section>
