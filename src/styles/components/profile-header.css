@@ -17,6 +17,12 @@
   z-index: 999;
 }
 
+.profile-avatar p {
+  font-size: 60px;
+  color: var(#3c455b);
+  padding: 30%;
+}
+
 .profile-avatar img {
   height: 100%;
   width: 100%;
