@@ -1,4 +1,4 @@
-import { removeChildNodes } from "../utils";
+import { removeChildNodes, getInitials } from "../utils";
 
 
 const compareStrings = (a, b) => {
@@ -73,6 +73,15 @@ const generateListItemNode = (data) => {
     avatarImg.src = avatarSrc;
     avatarImg.setAttribute("aria-label", `${name}`);
     avatarNode.appendChild(avatarImg);
+  }
+  else{
+    const initials = getInitials(name);
+    // check if initials are defined
+    if(initials){
+      const initialsParagraph = document.createElement("p");
+      initialsParagraph.innerHTML = initials;
+      avatarNode.appendChild(initialsParagraph);
+    }
   }
 
   return clone;
