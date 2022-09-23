@@ -1,5 +1,6 @@
 import { removeChildNodes } from "../utils";
 
+
 /**
  * Function which generates a single list-item node based on a dataset
  *
