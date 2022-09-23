@@ -18,7 +18,8 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
-  background-color: var(--grayscale_1);
+  background-color: transparent;
+  border: solid;
   padding: 16px 24px;
   border-radius: 10px;
 }
@@ -35,16 +36,16 @@
   margin-bottom: 8px;
 }
 
+
 .profile-list-item-avatar {
   display: inline-block;
-  background-color: var(--grayscale_2);
+  border: double;
   border-radius: 50%;
   overflow: hidden;
   height: 90px;
   width: 90px;
   min-width: 90px;
 }
-
 .profile-list-item-avatar p {
   font-size: 30px;
   color: var(#3c455b);
@@ -53,6 +54,11 @@
 }
 
 .profile-list-item-avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-list-item-avatar-topFriend img {
   height: 100%;
   width: 100%;
 }
