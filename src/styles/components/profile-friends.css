@@ -18,7 +18,8 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
-  background-color: transparent;
+  background-image: linear-gradient(to right top, #c152a2, #a66cc2, #8383d5, #6195db, #4ca3d7, #43aad3, #44b0cd, #4eb6c6, #49b9c2, #48bcbc, #4bbfb5, #52c1ad);
+  
   border: solid;
   padding: 16px 24px;
   border-radius: 10px;
