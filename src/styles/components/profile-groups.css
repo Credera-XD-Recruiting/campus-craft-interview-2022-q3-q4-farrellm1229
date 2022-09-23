@@ -33,7 +33,7 @@
   padding: 0;
   width: 100%;
   max-width: 200px;
-  background-color: var(--grayscale_1);
+  background-color: transparent;
   text-decoration: none;
   color: var(--midnight_black);
 
